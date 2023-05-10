@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{789A886F-0AF2-49DD-9D0B-B5C84B3C1510}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GraSupInf</RootNamespace>
+    <AssemblyName>GraSupInf</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles Usuario\GrupoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles Usuario\GrupoUC.Designer.cs">
+      <DependentUpon>GrupoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelEstudiantesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelEstudiantesUC.Designer.cs">
+      <DependentUpon>PanelEstudiantesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelGruposUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelGruposUC.Designer.cs">
+      <DependentUpon>PanelGruposUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelInformesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelInformesUC.Designer.cs">
+      <DependentUpon>PanelInformesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelModuloUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelModuloUC.Designer.cs">
+      <DependentUpon>PanelModuloUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelPresentacionUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles Usuario\PanelPresentacionUC.Designer.cs">
+      <DependentUpon>PanelPresentacionUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRASUPINFDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GRASUPINFDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\CRDistribucionNotasModulo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRDistribucionNotasModulo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\CRFiltroSuspensosHoras.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRFiltroSuspensosHoras.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\CRGrupoASIR1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRGrupoASIR1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\CREstudiantesSuspensosHoras.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CREstudiantesSuspensosHoras.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\CRGrupoDAM1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRGrupoDAM1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\CRGrupoDAW1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRGrupoDAW1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Informes\CRNotasEstudiante.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRNotasEstudiante.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\DistribucionNotasGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\DistribucionNotasGrupo.Designer.cs">
+      <DependentUpon>DistribucionNotasGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\DistribucionNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\DistribucionNotas.Designer.cs">
+      <DependentUpon>DistribucionNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\DistribucionNotasModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\DistribucionNotasModulo.Designer.cs">
+      <DependentUpon>DistribucionNotasModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\InformeFiltroEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\InformeFiltroEstudiantes.Designer.cs">
+      <DependentUpon>InformeFiltroEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\InformeGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\InformeGrupo.Designer.cs">
+      <DependentUpon>InformeGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\InformeNotasEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\InformeNotasEstudiante.Designer.cs">
+      <DependentUpon>InformeNotasEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Controles Usuario\GrupoUC.resx">
+      <DependentUpon>GrupoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Usuario\PanelEstudiantesUC.resx">
+      <DependentUpon>PanelEstudiantesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Usuario\PanelGruposUC.resx">
+      <DependentUpon>PanelGruposUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Usuario\PanelInformesUC.resx">
+      <DependentUpon>PanelInformesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Usuario\PanelModuloUC.resx">
+      <DependentUpon>PanelModuloUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles Usuario\PanelPresentacionUC.resx">
+      <DependentUpon>PanelPresentacionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CRDistribucionNotasModulo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRDistribucionNotasModulo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CRFiltroSuspensosHoras.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRFiltroSuspensosHoras.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CRGrupoASIR1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRGrupoASIR1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CREstudiantesSuspensosHoras.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CREstudiantesSuspensosHoras.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CRGrupoDAM1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRGrupoDAM1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CRGrupoDAW1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRGrupoDAW1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CRNotasEstudiante.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRNotasEstudiante.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\DistribucionNotasGrupo.resx">
+      <DependentUpon>DistribucionNotasGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\DistribucionNotas.resx">
+      <DependentUpon>DistribucionNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\DistribucionNotasModulo.resx">
+      <DependentUpon>DistribucionNotasModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformeFiltroEstudiantes.resx">
+      <DependentUpon>InformeFiltroEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformeGrupo.resx">
+      <DependentUpon>InformeGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformeNotasEstudiante.resx">
+      <DependentUpon>InformeNotasEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Report2.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="GRASUPINFDataSet.xsc">
+      <DependentUpon>GRASUPINFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet.xss">
+      <DependentUpon>GRASUPINFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet1.xsc">
+      <DependentUpon>GRASUPINFDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet1.xss">
+      <DependentUpon>GRASUPINFDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet2.xsc">
+      <DependentUpon>GRASUPINFDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet2.xss">
+      <DependentUpon>GRASUPINFDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet3.xsc">
+      <DependentUpon>GRASUPINFDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet3.xss">
+      <DependentUpon>GRASUPINFDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet4.xsc">
+      <DependentUpon>GRASUPINFDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet4.xss">
+      <DependentUpon>GRASUPINFDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet5.xsc">
+      <DependentUpon>GRASUPINFDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet5.xss">
+      <DependentUpon>GRASUPINFDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet6.xsc">
+      <DependentUpon>GRASUPINFDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet6.xss">
+      <DependentUpon>GRASUPINFDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet7.xsc">
+      <DependentUpon>GRASUPINFDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet7.xss">
+      <DependentUpon>GRASUPINFDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet8.xsc">
+      <DependentUpon>GRASUPINFDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="GRASUPINFDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GRASUPINFDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GRASUPINFDataSet8.xss">
+      <DependentUpon>GRASUPINFDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Help\Ayuda.chm" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargando.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\centro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grupo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GestorGsi\GsiGestor.csproj">
+      <Project>{62b9d55d-d831-4c6d-a5f3-e17d5eb2ed8e}</Project>
+      <Name>GsiGestor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utiles\Utiles.csproj">
+      <Project>{27937933-fcab-4d5a-b24c-e15a54dea1f6}</Project>
+      <Name>Utiles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\docente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_estudiante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_pass.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_distrib_grupo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_distrib_docente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_distrib_modulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acumulado.png" />
+    <None Include="Resources\resultados.png" />
+    <None Include="Resources\comp.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

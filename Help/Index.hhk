@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="centro">
+		<param name="Name" value="Centro">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="comparador">
+		<param name="Name" value="Comparador">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="distribuci&oacute;n">
+		<param name="Name" value="Grupo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="URL" value="FicheroChm\informes.htm">
+		<param name="Name" value="Módulo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="Estudiante">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="Estudiante">
+		<param name="Local" value="FicheroChm\informes.htm">
+		<param name="Name" value="D. Grupo">
+		<param name="Local" value="FicheroChm\informes.htm">
+		<param name="Name" value="Comparador">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="estudiante">
+		<param name="Name" value="Grupo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="Estudiante">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="evaluaci&oacute;n">
+		<param name="Name" value="Evaluación">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="filtro">
+		<param name="Name" value="Grupo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="Módulo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="Informes">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="grupo">
+		<param name="Name" value="Grupo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="D. Grupo">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="instalaci&oacute;n">
+		<param name="Name" value="Instalación">
+		<param name="Local" value="FicheroChm\faq.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="m&oacute;dulo">
+		<param name="Name" value="Módulo">
+		<param name="Local" value="FicheroChm\dashboard.htm">
+		<param name="Name" value="Comparador">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pasan">
+		<param name="Name" value="Pasan">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="resultados">
+		<param name="Name" value="Resultados">
+		<param name="Local" value="FicheroChm\informes.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="start">
+		<param name="Name" value="Getting started">
+		<param name="Local" value="FicheroChm\getting-started.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

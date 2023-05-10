@@ -1,0 +1,12 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=FicheroChm.chm
+Contents file=FicheroChm\Table of Contents.hhc
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0xc0a Español (España, internacional)
+
+
+[INFOTYPES]
+
